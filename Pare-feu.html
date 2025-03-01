@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pare-feu</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: blue;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            cursor: pointer;
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: white;
+            transition: background-color 0.3s ease;
+        }
+        header h1:hover {
+            background-color: #f0f0f0; /* Change la couleur au survol */
+            color: blue;
+        }
+        .centered-container {
+            background-color: white;
+            width: 60%;
+            margin: 50px auto;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Accueil</a></h1>
+    </header>
+
+    <div class="centered-container">
+        <h1>Création et optimisation d’un pare-feu</h1>
+        <p>Le TP de virtualisation création et optimisation d’un pare-feu a pour objectif de créer un pare-feu au départ incomplet puis de le compléter.</p>
+        <br>
+        <h2>Pourquoi ce TP m’a permis de valider la compétence “Administrer” ?</h2>
+        <br>
+        <p>Concevoir et développer des applications communicantes : Lors de ce TP, j’ai appris que l’on pouvait passer par le pare-feu afin de bloquer ou d'accéder à certaines informations en local. J’ai réussi à faire en sorte qu’un site contenu dans un serveur virtuel ne soit visible que par certaines machines du réseau.</p>
+        <br>
+        <p>Utiliser des serveurs et des services réseaux virtualisés : Durant ce TP, j’ai utilisé 5 machines virtuelles Netkit avec lesquelles j’ai configuré un réseau contenant un routeur, deux serveurs web, trois machines.</p>
+        <br>
+        <p>Sécuriser les services et données d’un système : Dans le cadre du TP, j’ai dû concevoir un pare-feu afin que les machines publiques ne puissent pas accéder au réseau privé mais que l’inverse soit possible. Au départ la machine publique pouvait arrêter un envoi de données entre deux machines privées, après avoir configuré correctement le fichier de configuration cela n’est plus possible, le pare-feu fonctionne !</p>
+    </div>
+</body>
+</html>
